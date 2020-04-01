@@ -1,0 +1,269 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, Sans-serif;
+    background-color: #f4f4f4;
+}
+/* This gives all the containers a width of 90% , hides overflow and set margin to auto*/
+.container{
+    width: 90%;
+overflow: hidden;
+margin: auto;
+
+}
+/* This styles the social media icons in the header*/
+.icons{
+    height: 40px;
+    float: right;
+    margin-right: 20px;
+}
+.icons img{
+    margin-right: 20px;
+    border: none;
+    border-radius:  50%;
+}
+
+/* This styles the enitire header*/
+header{
+    background: black;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid NavajoWhite;
+}
+
+/* This decorate the Nav links*/
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.6s ease;
+}
+/* The hover for the nav link*/
+header .container a:hover{
+    border-top: 2px solid NavajoWhite;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+/*this float, display inline-block and set margin to the nav link */
+header li{
+    float: left;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+/* This decorate the logo in the header */
+header .branding{
+    float: left;
+}
+header .branding h1{
+    margin:0;
+}
+/* This float the nav to the right and set margin*/
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+/*This is the first section banner */
+#showcase{
+    min-height: 400px;
+    background: url('../IMG/back.jpg') no-repeat 0 -400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-bottom: 3px solid NavajoWhite;
+    
+   
+}
+
+/*This makes the background changes */
+#showcase{
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url('../IMG/40.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url('../IMG/10.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background: url('../IMG/20.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background: url('../IMG/30.jpg')no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+/* this styles the Header in the first section */
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: white;
+}
+/* This decorate the paragraph in the first section */
+#showcase p{
+    font-size: 20px;
+    color: white;
+}
+/*  Searching area*/
+#search{
+    background: black;
+    color: white;
+    min-height: 80px;
+    border-bottom: 3px solid NavajoWhite;
+}
+/* The main or the middle article*/
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 100%;
+
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 28%;
+    text-align: center;
+    padding: 10px;
+}
+/* *********************************************************************/
+@media(max-width: 768px){
+    header .branding, header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+/* This shakes the image */
+section img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  
+ 
+
+  
+/* this decorate the footer */
+footer{
+    min-height: 300px;
+    background:black;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    border-top: 3px solid NavajoWhite;
+}
+footer .container{
+    width: 90%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    
+}
+
+.one{
+    text-align: center;
+}
+footer{
+    color: white;
+}
+
+
+  
+.box a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.thumbnail-slider{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.thumbnail-slider .thumbnail-container{
+
+    width: 100%;
+    float: left;
+    transition: margin 1s ease;
+}
+.thumbnail-slider .items{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    float: left;
+}
+.thumbnail-slider .controls{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+.thumbnail-slider .controls ul{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.thumbnail-slider .controls ul li{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #c3c3c3;
+    margin:4px;
+    display: inline-block;
+    line-height: 33px;
+    cursor: pointer; 
+}
+.thumbnail-slider .controls ul li.active{
+    background: green;
+    color: #ffffff; 
+    
+}
+.alll{
+    height: 500px;
+}
